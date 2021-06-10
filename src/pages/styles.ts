@@ -29,3 +29,8 @@ export const GridItem = styled.div`
 export const Title = styled.h2`
   text-transform: capitalize;
 `;
+
+export const HomeContainer = styled.div`
+  width: 80%;
+  position: relative;
+`;

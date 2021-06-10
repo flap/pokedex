@@ -9,6 +9,8 @@ import AbilityCard from "../components/AbilityCard";
 import * as S from "./styles";
 
 const PokemonInfo = ({ pokemon }) => {
+
+  console.log('pokemon :>> ', pokemon);
   const { name, types, stats, abilities } = pokemon;
 
   return (
@@ -38,7 +40,6 @@ const PokemonInfo = ({ pokemon }) => {
           </S.GridItem>
         </div>
       </S.GridContainer>
-
       <BackButton />
     </S.Container>
   );
