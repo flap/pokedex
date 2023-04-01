@@ -36,10 +36,6 @@ export default function Home({ pokemons }) {
 
   return (
     <S.HomeContainer>
-      <button onClick={handleOpenModal}>Abre</button>
-      {isModalOpen && (
-        <ModalInfo modalIsOpen={isModalOpen} closeModal={handleCloseModal} />
-      )}
       <SearchBar onSearch={handleSearch} />
       {isLoading ? <Spinner /> : <CardPokemon pokemons={filtered} />}
       {!isLoading && filtered.length === 0 && <ErrorMessage />}
